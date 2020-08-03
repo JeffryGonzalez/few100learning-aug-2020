@@ -238,7 +238,11 @@ describe('types in Typescript', () => {
 
         });
         it('modifying an array in a non-destructive way', () => {
+            const friends = ['Amy', 'Bill', 'David'];
 
+            const friends2 = ['Sarah', ...friends, 'Zac']; // ... here is the 'Spread' operator.
+
+            expect(friends2).toEqual(['Sarah', 'Amy', 'Bill', 'David', 'Zac']);
         });
     });
 });
