@@ -1,3 +1,7 @@
 h1 {
     color:green;
 }
+
+.tipButton[disabled] {
+    font-size: smaller;
+}
